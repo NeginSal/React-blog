@@ -1,12 +1,13 @@
-const BlogList = ({ blogs, title }) => {
+const BlogList = ({ blogs, title, handleDelete }) => {
 
     return (
         <div className="blog-list">
             <h2>{ title }</h2>
-        {blogs.map(blog => (
+            {blogs.map(blog => (
               <div className="blog-preview" key={blog.id}>
                  <h2>{ blog.title }</h2>
                  <p><p>Written by { blog.author }</p></p>
+                 <button onClick={() => handleDelete(blog.id)}>delete blog</button>
               </div>
            ))}
         </div>
