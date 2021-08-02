@@ -3,9 +3,6 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-.App{
-  background-color: #e6f3ff;
-}
 .navbar {
   padding: 20px;
   display: flex;
@@ -34,6 +31,7 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+  background-color: #e6f3ff;
 }
 /* blog previews / list */
 .blog-preview {
